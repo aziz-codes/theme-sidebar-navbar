@@ -1,5 +1,14 @@
+import { Sidebar, Navbar } from "./components/index";
 const App = () => {
-  return <div className="text-red-500">App</div>;
+  return (
+    <section className="flex flex-col">
+      <Navbar />
+      <div className="flex">
+        <Sidebar />
+        <div className="">routes</div>
+      </div>
+    </section>
+  );
 };
 
 export default App;
